@@ -10,8 +10,11 @@
 
 body {
     background-color: #F9FAFB;
+    
 }
-
+td{
+    padding: .9375rem;
+}
 a {
     color: black;
 }
@@ -301,3 +304,226 @@ a {
     color: #E7000B;
     padding-right: .625rem;
 }
+.container-for-table{
+  margin-top: 1.875rem;
+}
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "last-action last-action last-action last-action last-action"
+    "head-table head-table head-table head-table head-table"
+    "client-1 client-1 client-1 client-1 client-1"
+    "restaurant restaurant restaurant restaurant restaurant"
+    "amazon amazon amazon amazon amazon"
+    "omar omar omar omar omar"
+    "mohamed mohamed mohamed mohamed mohamed"
+    "shell-station shell-station shell-station shell-station shell-station"
+    "netflix-subscription netflix-subscription netflix-subscription netflix-subscription netflix-subscription"
+    "club club club club club"
+    "course course course course course";
+}
+.last-action{
+    display: flex;
+    justify-content: space-between;
+}
+.head-table{
+    display: flex;
+    justify-content: space-between;
+}
+.img-client img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.client-1{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+.client-details .content-img span{
+    font-size: .8125rem;
+    color: gray;
+} 
+.client-details{
+      display: flex;
+    flex-wrap: nowrap;
+}
+.income{
+    width: fit-content;
+    border-radius: .625rem;
+    background-color: #D9FAE5;
+    padding: .3125rem;
+}
+.state{
+    width: fit-content;
+    background-color:#D9FAE5 ;
+    border-radius: 50%;
+    padding: .3125rem;
+    font-size: .8125rem;
+}
+.cash-row1{
+    color: #00A663;
+}
+.last-action{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 1.5625rem;
+}
+.last-action p{
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-right: .9375rem;
+}
+.last-action span{
+    font-size: .8125rem;
+    color: #101828;
+    padding-left: .9375rem;
+
+}
+.container-for-table{
+    width: 90%;
+    border: .125rem solid #E5E7EB;
+    border-radius: 1.25rem;
+    background-color: white;
+}
+.main-table{
+ 
+    font-size: .9375rem;
+    margin: 1.875rem auto;
+    width: 100%;
+}
+.max{
+    padding-right: .625rem;
+}
+.main-row-1{
+margin-top: 20px;
+}
+.restaurant .img-restaurant , .logo-cart-for-amazon , .logo-cart-for-shell , .logo-cart-for-netflix , .logo-cart-for-club , .logo-cart-for-course {
+width: fit-content;
+padding: .625rem;
+border-radius: 50%;
+background-color: #F6E5CC;
+
+}
+.container-for-restaurant .restaurant .content-img span , .electric-shopping , .monthly-subscription , .traning-course , .monthly-membership  {
+    font-size: .8125rem;
+    color: gray;
+}
+.restaurant , .container-for-amazon , .container-for-shell , .container-for-netflix , .container-for-club , .container-for-course{
+    display: flex;
+    flex-wrap: nowrap;
+  
+}
+.food ,.shopping , .split-bill , .business , .transportation , .entertainment , .healthy , .learn {
+    width: fit-content;
+    padding: .625rem;
+    border-radius: .625rem;
+    background-color: #FFEDD4;
+    font-size: .8125rem;
+}
+.shopping{
+background-color: #DBEAFE;
+}
+.logo-cart-for-amazon{
+background-color: #DBEAFE;
+}
+.split-bill{
+    background-color: #F2E7FE;
+}
+.business{
+    background-color: #DBFCE7;
+}
+.color-row-4{
+    color: #00A663;
+}
+.logo-cart-for-shell{
+    background-color: #FFE2E2;
+}
+.transportation{
+    background-color: #FFE2E2;
+}
+.hanging{
+    color:#984B44 ;
+    background-color: #FEF9C2;
+}
+.logo-cart-for-netflix{
+    background-color: #E0E7FF;
+}
+.entertainment{
+    background-color:#c6c5d2 ;
+    color:#372AAC ;
+}
+.logo-cart-for-club{
+    background-color: #CEFAFE;
+}
+.healthy{
+    background-color: #CEFAFE;
+}
+.logo-cart-for-course{
+    background-color: #D0FAE5;
+}
+.learn{
+    background-color: #D0FAE5;
+}
+.last-action { grid-area: last-action; }
+
+.head-table { grid-area: head-table; }
+
+.client-1 { grid-area: client-1; }
+
+.restaurant { grid-area: restaurant; }
+
+.amazon { grid-area: amazon; }
+
+.omar { grid-area: omar; }
+
+.mohamed { grid-area: mohamed; }
+
+.shell-station { grid-area: shell-station; }
+
+.netflix-subscription { grid-area: netflix-subscription; }
+
+.club { grid-area: club; }
+
+.course { grid-area: course; }
+
+.table-of-expenses { grid-area: 1 / 3 / 13 / 8; }
+
+
+.global-new-activity { grid-area: 1 / 1 / 7 / 3; }
+
+.new-activity { grid-area: 1 / 1 / 2 / 3; }
+
+.create-new-acount { grid-area: 2 / 1 / 4 / 3; }
+
+.add-new-card { grid-area: 4 / 1 / 6 / 3; }
+
+.show-all-activity { grid-area: 6 / 1 / 7 / 3; }
+
+.all-bills { grid-area: 7 / 1 / 13 / 3; }
+
+.bills-for-month { grid-area: 7 / 1 / 8 / 3; }
+
+.total-bills { grid-area: 8 / 1 / 9 / 3; }
+
+.iternet { grid-area: 9 / 2 / 11 / 3; }
+
+.electic { grid-area: 9 / 1 / 11 / 2; }
+
+.phone { grid-area: 11 / 2 / 13 / 3; }
+
+.netflix { grid-area: 11 / 1 / 13 / 2; }
