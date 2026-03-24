@@ -30,7 +30,7 @@ a {
 }
 
 .navbar {
-    width: 19%;
+    width: 17%;
     /* overflow: auto; */
     position: relative;
     right: 0;
@@ -140,7 +140,7 @@ a {
 
 .section-1 {
     background-color: #F9FAFB;
-    width: 95%;
+    width: 98%;
     padding: 0.875rem;
     padding-top: 1.125rem;
     display: flex;
@@ -152,7 +152,7 @@ a {
     background-color: #FEFEFF;
     box-shadow: 0 1px #EDEEEF;
     margin-top: 1.875rem;
-    margin-right: 1.5625rem;
+    margin-right: 0.5625rem;
 }
 
 .part-one {
@@ -389,6 +389,7 @@ a {
     border-radius: 1.25rem;
     background-color: white;
     padding: 1.25rem;
+    padding-bottom: 3.75rem;
 }
 .main-table{
  
@@ -407,7 +408,7 @@ margin: 1.875rem auto;
     padding-right: .625rem;
 }
 .main-row-1{
-margin-top: 20px;
+margin-top: 1.25rem;
 }
 .restaurant .img-restaurant , .logo-cart-for-amazon , .logo-cart-for-shell , .logo-cart-for-netflix , .logo-cart-for-club , .logo-cart-for-course {
 width: fit-content;
@@ -482,6 +483,7 @@ background-color: #DBEAFE;
     border-radius: 1.25rem;
   margin-top: 1.6875rem;
   background-color: white;
+  padding: .625rem;
   
    
 }
@@ -527,8 +529,8 @@ background-color: #DBEAFE;
 }
 .acount{
     position: absolute;
-    top: 10px;
-   left: 15px;
+    top: .625rem;
+   left: .9375rem;
     color:#2B7FFF ;
     font-size: .8125rem;
 }
@@ -543,9 +545,222 @@ background-color: #DBEAFE;
     font-size: .8125rem;
     color:#00C950  ;
 }
-.new-activity h5{
+.show-all-activity {
     text-align: center;
     color:#2B7FFF ;
     padding-top: 1.25rem;
     border-top:1px solid rgb(230, 227, 227) ;
+}
+.monthly-bills{
+  margin-top: 1.25rem;
+    padding: .9375rem;
+    border: .0625rem solid #E5E7EB;
+    border-radius: .9375rem;
+    background-color: white;
+    height: fit-content;
+    padding-bottom: .625rem;
+}
+.bills{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.monthly-bills a {
+    font-size: .8125rem;
+    color: rgb(76, 75, 75);
+}
+.monthly-bills a:hover{
+    color: black;
+}
+.monthly-bills>p{
+    font-size: 1.875rem;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 1.25rem;
+}
+.monthly-bills .total-bills{
+    font-size: .8125rem;
+    color: #958682;
+    text-align: center;
+}
+.first-2-item , .second-2-item{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 1.25rem;
+    justify-content: space-around;
+}
+.first-2-item .internet , .electic , .phone , .netflix-2{
+    border: 1px solid  #E5E7EB;
+    border-radius: .9375rem;
+    padding: .625rem;
+    background-color: #F9FAFB;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: .8125rem;
+}
+
+.internet .logo-internet , .logo-electic , .logo-phone , .logo-netflix{
+    width: fit-content;
+    border-radius: .625rem;
+    padding: .625rem;
+    background-color: #DBEAFE;
+    justify-self: center;
+    margin-bottom: .9375rem
+}
+.content-internet , .content-electic , .content-netflix , .content-phone , .amount-due-netflix{
+    color: #717988;
+}
+.amount{
+    font-weight: 700;
+}
+.amount-due{
+    color: red;
+}
+.logo-electic{
+    background-color: #FEF9C2;
+    border-radius: .625rem;
+
+}
+.amount-due-electric{
+    color: #FF6900;
+}
+.logo-phone{
+    background-color: #DBFCE7;
+}
+.amount-due-phone{
+    color: #00C950;
+}
+.logo-netflix{
+    background-color: #FFE2E2;
+}
+
+
+.container2 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay"
+    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay"
+    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay"
+    "looking-at-balance looking-at-balance . . . ways-to-pay ways-to-pay";
+}
+
+.ways-to-pay { grid-area: ways-to-pay; }
+
+.income-expenses { grid-area: income-expenses; }
+
+.looking-at-balance { grid-area: looking-at-balance; }
+.ways-to-pay{
+    border-radius: .625rem;
+    border: .125rem solid  #E5E7EB;
+}
+.flex-ways-to-pay{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.flip-card1
+{margin: 1.25rem auto;
+    width: 300px;
+    height:200px ;
+    border-radius: .9375rem;
+    position: relative;
+  transition: all .5s ease;
+  transform-style: preserve-3d;
+
+}
+.flip-card1>div{
+     transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.flip-card1 .front1{
+    background-color: rgb(3, 3, 169);
+    border-radius: .9375rem;
+    z-index: 2;
+    backface-visibility: hidden;
+  
+}
+.flip-card1 .back1{
+    background-color: rgb(1, 1, 41);
+    border-radius: .9375rem;
+}
+.flip-card1:hover{
+    transform: rotateY(180deg);
+}
+.small-icon-card{
+width: fit-content;
+height: fit-content;
+padding: .625rem;
+background-color: rgb(94, 94, 238);
+border-radius: .3125rem ;
+}
+.min-small-icon-card{
+    width: 1.5625rem;
+    height: .9375rem;
+    background-color: rgb(212, 212, 243);
+    border-radius: .3125rem;
+}
+.logo-visa-1{
+    margin: .625rem;
+}
+.flix-icon-card{
+    display: flex;
+    flex-wrap: nowrap;justify-content: space-between;
+    margin: 1.25rem;
+
+}
+.group-of-small-icon .number-visa1{
+    font-size: .8125rem;
+    font-weight: 500;
+    color: white;
+  margin-bottom:50px;
+}
+.group-of-small-icon .dot-in-card{
+    font-size: .625rem;
+    margin-right: 2.1875rem;
+}
+.group-of-small-icon .number-visa1{
+    margin-right: 2.1875rem;
+}
+
+.detail-front-card{
+    font-size: .8125rem;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+       padding-top: 1.875rem;
+}
+.head-card-1{
+    width:fit-content;
+    padding: .3125rem;
+    font-size: .8125rem;
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.285);
+    position: relative;
+    color: white;
+    bottom:150px;
+    right:180px;
+    box-shadow: 0 0 5px ;
+    filter: blur(.5px); 
+}
+.section1-for-back-card{
+    width: 90%;
+    height: 2.5rem ;
+    border-radius: .3125rem;
+    background-image:linear-gradient(to left, #000000, #1e1e1e);
+    margin: .9375rem auto; 
+}
+.section2-for-back-card{
+    width: 90%;
+  height: 1.875rem;
+  background-color:linear-gradient(#000000, #1e1e1e); 
+  color: white;
 }
