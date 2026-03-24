@@ -637,15 +637,15 @@ background-color: #DBEAFE;
 
 
 .container2 {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay"
-    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay"
-    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay"
-    "looking-at-balance looking-at-balance . . . ways-to-pay ways-to-pay";
+    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
+    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
+    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
+    "looking-at-balance looking-at-balance . . . ways-to-pay ways-to-pay ways-to-pay";
 }
 
 .ways-to-pay { grid-area: ways-to-pay; }
@@ -660,7 +660,14 @@ background-color: #DBEAFE;
 .flex-ways-to-pay{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content:space-between;
+}
+.flex-ways-to-pay h2{
+    margin-right: .9375rem;
+    font-size: 1.125rem;
+}
+.flex-ways-to-pay a span{
+    margin-left: .9375rem;
 }
 .flip-card1
 {margin: 1.25rem auto;
@@ -690,6 +697,12 @@ background-color: #DBEAFE;
 .flip-card1 .back1{
     background-color: rgb(1, 1, 41);
     border-radius: .9375rem;
+    transform: rotateY(180deg);
+    color: white;
+    font-size: .8125rem;
+}
+.back1 p{margin-right: .9375rem;
+
 }
 .flip-card1:hover{
     transform: rotateY(180deg);
@@ -704,7 +717,7 @@ border-radius: .3125rem ;
 .min-small-icon-card{
     width: 1.5625rem;
     height: .9375rem;
-    background-color: rgb(212, 212, 243);
+    background-color: rgb(171, 171, 226);
     border-radius: .3125rem;
 }
 .logo-visa-1{
@@ -756,11 +769,92 @@ border-radius: .3125rem ;
     height: 2.5rem ;
     border-radius: .3125rem;
     background-image:linear-gradient(to left, #000000, #1e1e1e);
-    margin: .9375rem auto; 
+    margin: .9375rem auto;
+     
 }
-.section2-for-back-card{
+
+.third-section-for-back{
     width: 90%;
-  height: 1.875rem;
-  background-color:linear-gradient(#000000, #1e1e1e); 
-  color: white;
+    height: 1.875rem;
+    margin: .625rem auto;
+    border-radius: .3125rem;
+    background-image: radial-gradient(white , #605252);
+    color: #000;
+    position: relative;
+  
+}
+.number-back-1 span{
+    position: absolute;
+    top: .375rem;
+    left: .625rem;
+}
+.last-box-in-back{
+    width:fit-content;
+    height:fit-content;
+    padding: .3125rem;
+    background-color: white;
+    color: #000;
+    border-radius: .3125rem;
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+}
+.cvv , .last-box-in-back{
+    float: left;
+    margin-left: 1.25rem;
+}
+.fix-clear{
+    clear: both;
+}
+.last-detail-for-card{
+    position: relative;
+}
+.cvv{
+    position: absolute;
+    top:0;
+    left: 2.5rem;
+}
+.ways-to-pay{
+    padding-top: 1.25rem;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+}
+.flip-card2 .front2{
+    background-color:rgb(163, 15, 52);
+}
+.small-icon-card2{
+    background-color: rgb(242, 41, 91);
+}
+.min-small-icon-card2{
+    background-color:rgb(243, 103, 138) ;
+}
+.state-of-card3{
+    color: #00C950;
+  
+}
+.detail-card3{
+    font-size: .8125rem;
+    margin-left: 1.25rem;
+}
+.detail-of-front3-card3{
+    color: white;
+    padding-right: 1.25rem;
+    padding-top: 1.875rem;
+}
+.same-font{
+    font-size: .8125rem;
+}
+.detail-of-front3-card3 span{
+    
+    padding-top: .625rem;
+}
+.flix-card-3{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.income-expenses{
+    width: 100%;
+    border-radius: .625rem;
+    background-color: white;
 }
