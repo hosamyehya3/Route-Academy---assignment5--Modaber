@@ -10,11 +10,13 @@
 
 body {
     background-color: #F9FAFB;
-    
+
 }
-td{
+
+td {
     padding: .9375rem;
 }
+
 a {
     color: black;
 }
@@ -306,84 +308,104 @@ a {
     padding-right: .625rem;
 }
 
- .container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "new-activity new-activity table table table table table"
-    "new-activity new-activity table table table table table"
-    "monthly-bills monthly-bills table table table table table"
-    "monthly-bills monthly-bills table table table table table";
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "new-activity new-activity table table table table table"
+        "new-activity new-activity table table table table table"
+        "monthly-bills monthly-bills table table table table table"
+        "monthly-bills monthly-bills table table table table table";
 }
 
-.table { grid-area: table; }
+.table {
+    grid-area: table;
+}
 
-.new-activity { grid-area: new-activity; }
+.new-activity {
+    grid-area: new-activity;
+}
 
-.monthly-bills { grid-area: monthly-bills; }
- .last-action{
+.monthly-bills {
+    grid-area: monthly-bills;
+}
+
+.last-action {
     display: flex;
     justify-content: space-between;
 }
-.head-table{
+
+.head-table {
     display: flex;
     justify-content: space-between;
 }
-.img-client img{
+
+.img-client img {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
 }
-.client-1{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+
+.client-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
 }
-.client-details .content-img span{
+
+.client-details .content-img span {
     font-size: .8125rem;
     color: gray;
-} 
-.client-details{
-      display: flex;
+}
+
+.client-details {
+    display: flex;
     flex-wrap: nowrap;
 }
-.income{
+
+.income {
     width: fit-content;
     border-radius: .625rem;
     background-color: #D9FAE5;
     padding: .3125rem;
 }
-.state{
+
+.state {
     width: fit-content;
-    background-color:#D9FAE5 ;
+    background-color: #D9FAE5;
     border-radius: 1.25rem;
     padding: .3125rem;
     font-size: .8125rem;
 }
-.cash-row1{
+
+.cash-row1 {
     color: #00A663;
 }
-.last-action{
+
+.last-action {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding-top: 1.5625rem;
 }
-.last-action p{
+
+.last-action p {
     font-size: 1.125rem;
     font-weight: 700;
     padding-right: .9375rem;
 }
-.last-action span{
+
+.last-action span {
     font-size: .8125rem;
     color: #101828;
     padding-left: .9375rem;
 
 }
-.container-for-table{
+
+.container-for-table {
     margin: 1.5625rem;
     border: .125rem solid #E5E7EB;
     border-radius: 1.25rem;
@@ -391,42 +413,73 @@ a {
     padding: 1.25rem;
     padding-bottom: 3.75rem;
 }
-.main-table{
- 
-font-size: .9375rem;
-margin: 1.875rem auto;
- width: 100%; 
- border-collapse:collapse;
+
+.main-table {
+
+    font-size: .9375rem;
+    margin: 1.875rem auto;
+    width: 100%;
+    border-collapse: collapse;
 }
-.main-table tr{
+
+.main-table tr {
     border-bottom: .0625rem solid #F3F4F6;
 }
-.main-table .last-row{
+
+.main-table .last-row {
     border: 0;
 }
-.max{
+
+.max {
     padding-right: .625rem;
 }
-.main-row-1{
-margin-top: 1.25rem;
+
+.main-row-1 {
+    margin-top: 1.25rem;
 }
-.restaurant .img-restaurant , .logo-cart-for-amazon , .logo-cart-for-shell , .logo-cart-for-netflix , .logo-cart-for-club , .logo-cart-for-course {
-width: fit-content;
-padding: .625rem;
-border-radius: 50%;
-background-color: #F6E5CC;
+
+.restaurant .img-restaurant,
+.logo-cart-for-amazon,
+.logo-cart-for-shell,
+.logo-cart-for-netflix,
+.logo-cart-for-club,
+.logo-cart-for-course {
+    width: fit-content;
+    padding: .625rem;
+    border-radius: 50%;
+    background-color: #F6E5CC;
 
 }
-.container-for-restaurant .restaurant .content-img span , .electric-shopping , .monthly-subscription , .traning-course , .monthly-membership ,.buying-gas  {
+
+.container-for-restaurant .restaurant .content-img span,
+.electric-shopping,
+.monthly-subscription,
+.traning-course,
+.monthly-membership,
+.buying-gas {
     font-size: .8125rem;
     color: gray;
 }
-.restaurant , .container-for-amazon , .container-for-shell , .container-for-netflix , .container-for-club , .container-for-course{
+
+.restaurant,
+.container-for-amazon,
+.container-for-shell,
+.container-for-netflix,
+.container-for-club,
+.container-for-course {
     display: flex;
     flex-wrap: nowrap;
-  
+
 }
-.food ,.shopping , .split-bill , .business , .transportation , .entertainment , .healthy , .learn {
+
+.food,
+.shopping,
+.split-bill,
+.business,
+.transportation,
+.entertainment,
+.healthy,
+.learn {
     width: fit-content;
     padding: .625rem;
     border-radius: .625rem;
@@ -434,125 +487,154 @@ background-color: #F6E5CC;
     font-size: .8125rem;
 }
 
-.shopping{
-background-color: #DBEAFE;
+.shopping {
+    background-color: #DBEAFE;
 }
-.logo-cart-for-amazon{
-background-color: #DBEAFE;
+
+.logo-cart-for-amazon {
+    background-color: #DBEAFE;
 }
-.split-bill{
+
+.split-bill {
     background-color: #F2E7FE;
 }
-.business{
+
+.business {
     background-color: #DBFCE7;
 }
-.color-row-4{
+
+.color-row-4 {
     color: #00A663;
 }
-.logo-cart-for-shell{
+
+.logo-cart-for-shell {
     background-color: #FFE2E2;
 }
-.transportation{
+
+.transportation {
     background-color: #FFE2E2;
 }
-.hanging{
-    color:#984B44 ;
+
+.hanging {
+    color: #984B44;
     background-color: #FEF9C2;
 }
-.logo-cart-for-netflix{
+
+.logo-cart-for-netflix {
     background-color: #E0E7FF;
 }
-.entertainment{
-    background-color:#c6c5d2 ;
-    color:#372AAC ;
+
+.entertainment {
+    background-color: #c6c5d2;
+    color: #372AAC;
 }
-.logo-cart-for-club{
+
+.logo-cart-for-club {
     background-color: #CEFAFE;
 }
-.healthy{
+
+.healthy {
     background-color: #CEFAFE;
 }
-.logo-cart-for-course{
+
+.logo-cart-for-course {
     background-color: #D0FAE5;
 }
-.learn{
+
+.learn {
     background-color: #D0FAE5;
-} 
-.new-activity{
-    border: .125rem solid  #E5E7EB;
+}
+
+.new-activity {
+    border: .125rem solid #E5E7EB;
     border-radius: 1.25rem;
-  margin-top: 1.6875rem;
-  background-color: white;
-  padding: .625rem;
-  
-   
+    margin-top: 1.6875rem;
+    background-color: white;
+    padding: .625rem;
+
+
 }
-.create-acount{
+
+.create-acount {
     padding-top: .9375rem;
     position: relative;
 }
-.new-activity h2{
+
+.new-activity h2 {
     padding-bottom: 2.5rem;
     padding-top: 1.5rem;
     padding-right: 1.25rem;
 }
-.flex-acount{
+
+.flex-acount {
     display: flex;
     flex-wrap: nowrap;
 }
-.create-acount span , .add-card span{
+
+.create-acount span,
+.add-card span {
     font-size: .8125rem;
     padding-right: 2.8125rem;
 }
-.new-activity .create-acount , .add-card{
+
+.new-activity .create-acount,
+.add-card {
     width: 91%;
- margin-right: .9375rem;
+    margin-right: .9375rem;
     border: .125rem solid #EFF6FF;
     border-radius: .625rem;
     background-color: #EFF6FF;
-    box-shadow:-.1875rem 0 #2B7FFF ;
-    padding-right: .625rem; 
+    box-shadow: -.1875rem 0 #2B7FFF;
+    padding-right: .625rem;
     padding-bottom: 0.875rem;
     padding-top: 1.875rem;
     margin-bottom: .875rem;
-   
+
 }
-.logo-for-new-acount , .logo-for-new-card{
+
+.logo-for-new-acount,
+.logo-for-new-card {
     width: fit-content;
     padding: .625rem;
     border-radius: 50%;
     background-color: #DBEAFE;
 }
-.detail-card{
+
+.detail-card {
     font-size: .8125rem;
     padding-right: .625rem;
 }
-.acount{
+
+.acount {
     position: absolute;
     top: .625rem;
-   left: .9375rem;
-    color:#2B7FFF ;
+    left: .9375rem;
+    color: #2B7FFF;
     font-size: .8125rem;
 }
+
 .add-card {
-     box-shadow:-.1875rem 0 #00C950 ;
-     position: relative;
+    box-shadow: -.1875rem 0 #00C950;
+    position: relative;
 }
-.card-visa{
+
+.card-visa {
     position: absolute;
     left: .9375rem;
     top: .625rem;
     font-size: .8125rem;
-    color:#00C950  ;
+    color: #00C950;
 }
+
 .show-all-activity {
     text-align: center;
-    color:#2B7FFF ;
+    color: #2B7FFF;
     padding-top: 1.25rem;
-    border-top:1px solid rgb(230, 227, 227) ;
+    border-top: 1px solid rgb(230, 227, 227);
 }
-.monthly-bills{
-  margin-top: 1.25rem;
+
+.monthly-bills {
+    margin-top: 1.25rem;
     padding: .9375rem;
     border: .0625rem solid #E5E7EB;
     border-radius: .9375rem;
@@ -560,37 +642,48 @@ background-color: #DBEAFE;
     height: fit-content;
     padding-bottom: .625rem;
 }
-.bills{
+
+.bills {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
 .monthly-bills a {
     font-size: .8125rem;
     color: rgb(76, 75, 75);
 }
-.monthly-bills a:hover{
+
+.monthly-bills a:hover {
     color: black;
 }
-.monthly-bills>p{
+
+.monthly-bills>p {
     font-size: 1.875rem;
     text-align: center;
     font-weight: 700;
     padding-top: 1.25rem;
 }
-.monthly-bills .total-bills{
+
+.monthly-bills .total-bills {
     font-size: .8125rem;
     color: #958682;
     text-align: center;
 }
-.first-2-item , .second-2-item{
+
+.first-2-item,
+.second-2-item {
     display: flex;
     flex-wrap: nowrap;
     padding-top: 1.25rem;
     justify-content: space-around;
 }
-.first-2-item .internet , .electic , .phone , .netflix-2{
-    border: 1px solid  #E5E7EB;
+
+.first-2-item .internet,
+.electic,
+.phone,
+.netflix-2 {
+    border: 1px solid #E5E7EB;
     border-radius: .9375rem;
     padding: .625rem;
     background-color: #F9FAFB;
@@ -600,7 +693,10 @@ background-color: #DBEAFE;
     font-size: .8125rem;
 }
 
-.internet .logo-internet , .logo-electic , .logo-phone , .logo-netflix{
+.internet .logo-internet,
+.logo-electic,
+.logo-phone,
+.logo-netflix {
     width: fit-content;
     border-radius: .625rem;
     padding: .625rem;
@@ -608,189 +704,231 @@ background-color: #DBEAFE;
     justify-self: center;
     margin-bottom: .9375rem
 }
-.content-internet , .content-electic , .content-netflix , .content-phone , .amount-due-netflix{
+
+.content-internet,
+.content-electic,
+.content-netflix,
+.content-phone,
+.amount-due-netflix {
     color: #717988;
 }
-.amount{
+
+.amount {
     font-weight: 700;
 }
-.amount-due{
+
+.amount-due {
     color: red;
 }
-.logo-electic{
+
+.logo-electic {
     background-color: #FEF9C2;
     border-radius: .625rem;
 
 }
-.amount-due-electric{
+
+.amount-due-electric {
     color: #FF6900;
 }
-.logo-phone{
+
+.logo-phone {
     background-color: #DBFCE7;
 }
-.amount-due-phone{
+
+.amount-due-phone {
     color: #00C950;
 }
-.logo-netflix{
+
+.logo-netflix {
     background-color: #FFE2E2;
 }
 
 
-.container2 {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
-    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
-    "looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
-    "looking-at-balance looking-at-balance . . . ways-to-pay ways-to-pay ways-to-pay";
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "looking-at-balance looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
+        "looking-at-balance looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
+        "looking-at-balance looking-at-balance looking-at-balance income-expenses income-expenses income-expenses ways-to-pay ways-to-pay ways-to-pay"
+        "looking-at-balance looking-at-balance looking-at-balance . . . ways-to-pay ways-to-pay ways-to-pay";
 }
 
-.ways-to-pay { grid-area: ways-to-pay; }
+.ways-to-pay {
+    grid-area: ways-to-pay;
+}
 
-.income-expenses { grid-area: income-expenses; }
+.income-expenses {
+    grid-area: income-expenses;
+}
 
-.looking-at-balance { grid-area: looking-at-balance; }
-.ways-to-pay{
+.looking-at-balance {
+    grid-area: looking-at-balance;
+}
+
+.ways-to-pay {
     border-radius: .625rem;
-    border: .125rem solid  #E5E7EB;
+    border: .125rem solid #E5E7EB;
 }
-.flex-ways-to-pay{
+
+.flex-ways-to-pay {
     display: flex;
     flex-wrap: nowrap;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.flex-ways-to-pay h2{
+
+.flex-ways-to-pay h2 {
     margin-right: .9375rem;
     font-size: 1.125rem;
 }
-.flex-ways-to-pay a span{
+
+.flex-ways-to-pay a span {
     margin-left: .9375rem;
 }
-.flip-card1
-{margin: 1.25rem auto;
+
+.flip-card1 {
+    margin: 1.25rem auto;
     width: 300px;
-    height:200px ;
+    height: 200px;
     border-radius: .9375rem;
     position: relative;
-  transition: all .5s ease;
-  transform-style: preserve-3d;
+    transition: all .5s ease;
+    transform-style: preserve-3d;
 
 }
-.flip-card1>div{
-     transform-style: preserve-3d;
+
+.flip-card1>div {
+    transform-style: preserve-3d;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-.flip-card1 .front1{
+
+.flip-card1 .front1 {
     background-color: rgb(3, 3, 169);
     border-radius: .9375rem;
     z-index: 2;
     backface-visibility: hidden;
-  
+
 }
-.flip-card1 .back1{
+
+.flip-card1 .back1 {
     background-color: rgb(1, 1, 41);
     border-radius: .9375rem;
     transform: rotateY(180deg);
     color: white;
     font-size: .8125rem;
 }
-.back1 p{margin-right: .9375rem;
+
+.back1 p {
+    margin-right: .9375rem;
 
 }
-.flip-card1:hover{
+
+.flip-card1:hover {
     transform: rotateY(180deg);
 }
-.small-icon-card{
-width: fit-content;
-height: fit-content;
-padding: .625rem;
-background-color: rgb(94, 94, 238);
-border-radius: .3125rem ;
+
+.small-icon-card {
+    width: fit-content;
+    height: fit-content;
+    padding: .625rem;
+    background-color: rgb(94, 94, 238);
+    border-radius: .3125rem;
 }
-.min-small-icon-card{
+
+.min-small-icon-card {
     width: 1.5625rem;
     height: .9375rem;
     background-color: rgb(171, 171, 226);
     border-radius: .3125rem;
 }
-.logo-visa-1{
+
+.logo-visa-1 {
     margin: .625rem;
 }
-.flix-icon-card{
+
+.flix-icon-card {
     display: flex;
-    flex-wrap: nowrap;justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     margin: 1.25rem;
 
 }
-.group-of-small-icon .number-visa1{
+
+.group-of-small-icon .number-visa1 {
     font-size: .8125rem;
     font-weight: 500;
     color: white;
-  margin-bottom:50px;
+    margin-bottom: 50px;
 }
-.group-of-small-icon .dot-in-card{
+
+.group-of-small-icon .dot-in-card {
     font-size: .625rem;
     margin-right: 2.1875rem;
 }
-.group-of-small-icon .number-visa1{
+
+.group-of-small-icon .number-visa1 {
     margin-right: 2.1875rem;
 }
 
-.detail-front-card{
+.detail-front-card {
     font-size: .8125rem;
     color: white;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-       padding-top: 1.875rem;
+    padding-top: 1.875rem;
 }
-.head-card-1{
-    width:fit-content;
+
+.head-card-1 {
+    width: fit-content;
     padding: .3125rem;
     font-size: .8125rem;
     border-radius: 1.25rem;
     background-color: rgba(255, 255, 255, 0.285);
     position: relative;
     color: white;
-    bottom:150px;
-    right:180px;
-    box-shadow: 0 0 5px ;
-    filter: blur(.5px); 
-}
-.section1-for-back-card{
-    width: 90%;
-    height: 2.5rem ;
-    border-radius: .3125rem;
-    background-image:linear-gradient(to left, #000000, #1e1e1e);
-    margin: .9375rem auto;
-     
+    bottom: 150px;
+    right: 180px;
+    box-shadow: 0 0 5px;
+    filter: blur(.5px);
 }
 
-.third-section-for-back{
+.section1-for-back-card {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: .3125rem;
+    background-image: linear-gradient(to left, #000000, #1e1e1e);
+    margin: .9375rem auto;
+
+}
+
+.third-section-for-back {
     width: 90%;
     height: 1.875rem;
     margin: .625rem auto;
     border-radius: .3125rem;
-    background-image: radial-gradient(white , #605252);
+    background-image: radial-gradient(white, #605252);
     color: #000;
     position: relative;
-  
+
 }
-.number-back-1 span{
+
+.number-back-1 span {
     position: absolute;
     top: .375rem;
     left: .625rem;
 }
-.last-box-in-back{
-    width:fit-content;
-    height:fit-content;
+
+.last-box-in-back {
+    width: fit-content;
+    height: fit-content;
     padding: .3125rem;
     background-color: white;
     color: #000;
@@ -798,63 +936,276 @@ border-radius: .3125rem ;
     font-size: 1.125rem;
     margin-top: 1.25rem;
 }
-.cvv , .last-box-in-back{
+
+.cvv,
+.last-box-in-back {
     float: left;
     margin-left: 1.25rem;
 }
-.fix-clear{
+
+.fix-clear {
     clear: both;
 }
-.last-detail-for-card{
+
+.last-detail-for-card {
     position: relative;
 }
-.cvv{
+
+.cvv {
     position: absolute;
-    top:0;
+    top: 0;
     left: 2.5rem;
 }
-.ways-to-pay{
+
+.ways-to-pay {
     padding-top: 1.25rem;
-    width: 90%;
+    width: 95%;
     background-color: white;
     margin: 0 auto;
 }
-.flip-card2 .front2{
-    background-color:rgb(163, 15, 52);
+
+.flip-card2 .front2 {
+    background-color: rgb(163, 15, 52);
 }
-.small-icon-card2{
+
+.small-icon-card2 {
     background-color: rgb(242, 41, 91);
 }
-.min-small-icon-card2{
-    background-color:rgb(243, 103, 138) ;
+
+.min-small-icon-card2 {
+    background-color: rgb(243, 103, 138);
 }
-.state-of-card3{
+
+.state-of-card3 {
     color: #00C950;
-  
+
 }
-.detail-card3{
+
+.detail-card3 {
     font-size: .8125rem;
     margin-left: 1.25rem;
 }
-.detail-of-front3-card3{
+
+.detail-of-front3-card3 {
     color: white;
     padding-right: 1.25rem;
     padding-top: 1.875rem;
 }
-.same-font{
+
+.same-font {
     font-size: .8125rem;
 }
-.detail-of-front3-card3 span{
-    
+
+.detail-of-front3-card3 span {
+
     padding-top: .625rem;
 }
-.flix-card-3{
+
+.flix-card-3 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 .income-expenses{
+margin-right: 10px;
+}
+.income-expenses .income-and-expenses {
     width: 100%;
     border-radius: .625rem;
     background-color: white;
+    border: .125rem solid #E5E7EB;
+    padding-bottom: 3.125rem;
+}
+
+.flix-income-expenses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1.25rem;
+}
+
+.container-income,
+.container-expenses {
+    width: .9375rem;
+    height: .9375rem;
+    background-color: #10B981;
+    border-radius: .1875rem;
+    margin-inline: 10px;
+}
+
+.container-expenses {
+    background-color: #EF4444;
+}
+
+.container-income-and-expenses {
+    display: flex;
+    padding-top: 1.5625rem;
+    justify-content: center;
+    margin: 1.25rem;
+}
+
+.the-same-font-in-this-section {
+    font-size: .75rem;
+    color: rgb(89, 88, 88);
+
+}
+
+.column-green-1,
+.column-green-2,
+.column-green-3,
+.column-green-4 {
+    width: 1.125rem;
+    height: 6.25rem;
+    background-color: #10B981;
+    border-top-right-radius: .1875rem;
+    border-top-left-radius: .1875rem;
+}
+
+.column-red-1,
+.column-red-2,
+.column-red-3,
+.column-red-4 {
+    width: 1.125rem;
+    height: 3.125rem;
+    background-color: #EF4444;
+    border-top-right-radius: .1875rem;
+    border-top-left-radius: .1875rem;
+}
+.column-red-1:hover{
+    background-color:#F26969 ;
+}
+.column-red-2:hover{
+    background-color:#F26969 ;
+}
+.column-red-3:hover{
+    background-color:#F26969 ;
+}
+.column-red-4:hover{
+    background-color: #F26969;
+}
+.column-green-1:hover{background-color: #40C79A;}
+.column-green-2:hover{background-color: #40C79A;}
+.column-green-3:hover{background-color: #40C79A;}
+.column-green-4:hover{background-color: #40C79A;}
+.week-1,
+.week-2,
+.week-3,
+.week-4 {
+    display: flex;
+    gap: .125rem;
+    align-items: baseline;
+}
+
+.column-green-2 {
+    height: 6.5625rem;
+
+}
+
+.column-red-2 {
+    height: 3.4375rem;
+}
+
+.column-green-3 {
+    height: 5.625rem;
+}
+
+.column-red-3 {
+    height: 2.5rem;
+}
+
+.column-green-4 {
+    height: 7.1875rem;
+}
+
+.column-red-4 {
+    height: 4.0625rem;
+}
+
+.container-column-green-red {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.detail-for-acounting {
+    width: 100%;
+    border-radius: .625rem;
+    background-color: white;
+    border: .125rem solid #E5E7EB;
+    padding-bottom: .625rem;
+    margin-top: 1.25rem;
+}
+
+.flix-head-detail-for-acounting {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.25rem;
+}
+
+.flix-head-detail-for-acounting a:hover {
+    color: rgb(54, 54, 54);
+}
+
+.current-acount,
+.savings-acount,
+.credit-card-last {
+    border-radius: .625rem;
+    background-color: #c6cbd12a;
+    display: flex;
+    height: 5rem;
+    width: 95%;
+    margin: 1.25rem auto;
+    padding-top: 1.25rem;
+
+}
+
+.logo-bank-masr {
+    width: fit-content;
+    height: fit-content;
+    padding: .8125rem;
+    background-color: #DBEAFE;
+    border-radius: .8125rem;
+}
+
+.logo-and-content {
+    display: flex;
+    padding-right: 1.25rem;
+}
+
+.content-current-acount {
+    margin-right: .625rem;
+}
+
+.current-acount .the-cash-in-current-acount,
+.the-cash-in-credit,
+.the-cash-in-saving-acount {
+    margin-right: 50px;
+    margin-top: .625rem;
+}
+
+.the-cash-in-credit {
+    color: red;
+}
+
+.content-current-acount span {
+    font-size: .8125rem;
+    color: #6A7282;
+}
+.looking-at-balance{
+      width: 100%;
+    border-radius: .625rem;
+    background-color: white;
+    border: .125rem solid #E5E7EB;
+    padding-bottom: .625rem;
+    
+}
+.flex-the-head-balance{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.25rem;
+}
+.total-balance{
+    width: 90%;
+    background-color: #EFF4FF;
+    border-radius: .625rem;
 }
